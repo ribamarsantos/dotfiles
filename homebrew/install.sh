@@ -9,10 +9,15 @@ info () {
   printf "\r  [ \033[00;34m..\033[0m ] $1\n"
 }
 
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+
 # Check for Homebrew
 if test ! $(which brew)
 then
-  info "  Installing Homebrew for you."
+  info "Installing Homebrew for you."
 
   # Install the correct homebrew for each OS type
   if test "$(uname)" = "Darwin"
@@ -22,9 +27,12 @@ then
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
+
+  success "Homebrew Installed"
 else 
-  info "  Homebrew already installed. Upgrading it"
+  info "Homebrew already installed. Upgrading it"
   brew update
+  success "Homebrew Updated"  
 fi
 
 exit 0

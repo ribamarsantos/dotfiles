@@ -63,6 +63,6 @@ then
   success 'install zsh-quickstart-kit'
 else
   fail 'install zsh-quickstart-kit'
-  echo "If something has failed, please install zsh-quickstart-kit manualy"
-  echo "refer to: https://github.com/unixorn/zsh-quickstart-kit/blob/master/Readme.md"
+  info "If something has failed, please install zsh-quickstart-kit manualy"
+  info "refer to: https://github.com/unixorn/zsh-quickstart-kit/blob/master/Readme.md"
 fi

@@ -1,6 +1,10 @@
 # https://facebook.github.io/react-native/docs/getting-started.html
 
-echo 'Setting up React Native Android environment'
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+info 'Setting up React Native Android environment'
 
 brew install node
 brew install watchman

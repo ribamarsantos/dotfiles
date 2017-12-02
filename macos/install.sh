@@ -3,7 +3,12 @@
 # command line interface to it that we can use to just install everything, so
 # yeah, let's do that.
 
-echo "› sudo softwareupdate -i -a"
-# sudo softwareupdate -i -a
 
-sudo sh ./macos/set-defaults.sh
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+info "› sudo softwareupdate -i -a"
+
+# sudo softwareupdate -i -a
+# sudo sh ./macos/set-defaults.sh
