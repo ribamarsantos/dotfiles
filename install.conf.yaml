@@ -9,36 +9,36 @@
         path: .ssh/config
         create: true
         relink: true
-    ~/.vimrc: 
+    ~/.vimrc:
         path: vim/.vimrc
         relink: true
         create: true
-    ~/.zshrc.d: 
+    ~/.zshrc.d:
         path: .zshrc.d/
+        relink: true
+        create: true
+    ~/bin:
+        path: bin/
         relink: true
         create: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - sh ./homebrew/install.sh
-  - brew bundle
   -
-    command: sh ./script/bootstrap
-    stdin: true
+    command: sh ./homebrew/install.sh
     stdout: true
-    description: Bootstrap topical components https://github.com/eduardomoroni/dotFiles#components
+    description: Install homebrew
   -
     command: sh ./script/install-zsh-quickstart-kit
     stdin: true
     stdout: true
     description: Install zsh-quickstart-kit
   -
-    command: find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+    command: sh ./script/bootstrap
     stdin: true
     stdout: true
-    description: Find the installers and run them iteratively
+    description: Bootstrap topical components 
   -
-    command: ./script/bootstrap
-    stdin: true
+    command: find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
     stdout: true
-    description: bootstrap some symlinks
+    description: Find the all install.sh and run them iteratively
