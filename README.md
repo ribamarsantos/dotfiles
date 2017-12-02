@@ -13,6 +13,7 @@ After mixing-up, topical components features is not working as expected. Followi
 
 ## before installing
 Before you go into an one command install please double-check following items and customize accordingly
+- [.gitconfig](https://github.com/eduardomoroni/dotfiles/blob/master/.gitconfig)
 - [Brewfile](https://github.com/eduardomoroni/dotfiles/blob/master/Brewfile).
 - [.zshrc.d](https://github.com/eduardomoroni/dotfiles/tree/master/.zshrc.d)
 - Topics. You might don't want install `yarn` for instance, then just delete [yarn](https://github.com/eduardomoroni/dotfiles/tree/master/yarn) folder, you might want to add new topics, refer to [holman/dotfiles](https://github.com/holman/dotfiles)
