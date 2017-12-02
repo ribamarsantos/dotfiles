@@ -1,12 +1,23 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
+    ~/.gitconfig: 
+        path: .gitconfig
+        relink: true
         create: true
-    ~/.vimrc: vimrc
+    ~/.ssh/config:
+        path: .ssh/config
+        create: true
+        relink: true
+    ~/.vimrc: 
+        path: vim/.vimrc
+        relink: true
+        create: true
 
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  
+# - shell:
+#   - [git submodule update --init --recursive, Installing submodules]
+#   -
+#     command: sh ./script/install
+#     stdin: true
+#     stdout: true
+#     description: Installing dotFiles
