@@ -4,13 +4,14 @@ set -e
 
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
-ZSH_QUICKSTART_KIT_DIR="zsh-quickstart-kit"
 
 DOTBOT_BIN="/bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 git submodule update --init --recursive "${DOTBOT_DIR}"
-git submodule update --init --recursive "${ZSH_QUICKSTART_KIT_DIR}"
+git submodule update --init --recursive zsh-quickstart-kit
+git submodule update --init --recursive zgen
+
 cd "${BASEDIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"

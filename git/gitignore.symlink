@@ -1,3 +1,17 @@
-.DS_Store
+# Don't remove the zsh-quickstart-kit comment or selfupdate will break.
+# zsh-quickstart-kit
+*.*.un~
+*.a
+*.bz2
+*.gz
+*.o
+*.pyc
+*.pyo
+*.sublime-project
+*.sublime-workspace
+*.tbz
+*.tbz2
+*.tgz
+*.Z
 *~
-*.swp
+.DS_Store

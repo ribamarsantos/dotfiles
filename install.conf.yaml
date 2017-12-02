@@ -14,10 +14,15 @@
         relink: true
         create: true
 
-# - shell:
-#   - [git submodule update --init --recursive, Installing submodules]
-#   -
-#     command: sh ./script/install
-#     stdin: true
-#     stdout: true
-#     description: Run all dotFiles install
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: sh ./script/install-zsh-quickstart-kit
+    stdin: true
+    stdout: true
+    description: Install zsh-quickstart-kit
+  -
+    command: sh ./script/install
+    stdin: true
+    stdout: true
+    description: Run all dotFiles install
