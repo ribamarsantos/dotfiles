@@ -20,4 +20,4 @@
 #     command: sh ./script/install
 #     stdin: true
 #     stdout: true
-#     description: Installing dotFiles
+#     description: Run all dotFiles install
