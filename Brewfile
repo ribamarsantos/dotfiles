@@ -1,4 +1,4 @@
-cask_args appdir: '/Applications'
+cask_args appdir: "/Applications"
 
 tap "homebrew/dupes"
 tap "homebrew/core"
@@ -8,7 +8,7 @@ tap "caskroom/versions"
 tap "caskroom/cask"
 tap "caskroom/fonts"
 
-brew 'ack'
+brew "ack"
 brew "readline"
 brew "git"
 brew "gnupg"
@@ -24,10 +24,11 @@ brew "z"
 brew "zsh"
 brew "coreutils"
 
-cask 'firefox'
-cask 'google-chrome'
-cask 'slack'
+cask "firefox"
+cask "google-chrome"
+cask "slack"
 cask "macvim"
 cask "font-source-code-pro"
 cask "font-fira-code"
 cask "insomnia"
+cask "visual-studio-code"
