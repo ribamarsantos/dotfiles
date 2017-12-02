@@ -13,16 +13,27 @@
         path: vim/.vimrc
         relink: true
         create: true
+    ~/.zshrc.d: 
+        path: .zshrc.d/
+        relink: true
+        create: true
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - sh ./homebrew/install.sh
+  - brew bundle
   -
     command: sh ./script/install-zsh-quickstart-kit
     stdin: true
     stdout: true
     description: Install zsh-quickstart-kit
   -
-    command: sh ./script/install
+    command: find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
     stdin: true
     stdout: true
-    description: Run all dotFiles install
+    description: Find the installers and run them iteratively
+  -
+    command: ./script/bootstrap
+    stdin: true
+    stdout: true
+    description: bootstrap some symlinks

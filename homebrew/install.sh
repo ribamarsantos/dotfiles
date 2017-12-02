@@ -18,7 +18,8 @@ then
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
-
+else 
+  echo "  Homebrew already installed."
 fi
 
 exit 0

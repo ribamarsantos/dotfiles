@@ -43,7 +43,7 @@ defaults write com.apple.screencapture type -string “png”
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=” “
+sudo nvram SystemAudioVolume=" "
 
 # Disable menu bar transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
