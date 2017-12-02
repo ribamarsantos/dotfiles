@@ -20,9 +20,9 @@ cd ~/.dotfiles
 
 First of all, this will run [dotbot](https://github.com/anishathalye/dotbot) based on [this configuration](https://github.com/eduardomoroni/dotfiles/blob/master/install.conf.yaml). This will symlink the appropriate files in `.dotfiles` to your home directory. Everything is configured and tweaked within `~/.dotfiles`.
 
-Customizations can be done by following (zsh-quickstart-kit customizations)[https://github.com/unixorn/zsh-quickstart-kit#customizations] or following (components customization)[https://github.com/eduardomoroni/dotFiles#components]
+Customizations can be done by following [zsh-quickstart-kit customizations](https://github.com/unixorn/zsh-quickstart-kit#customizations) or following [components customization](https://github.com/eduardomoroni/dotFiles#components)
 
-The main folder you'll want to take a look at is (./zshrc.d/)[https://github.com/eduardomoroni/dotfiles/tree/master/.zshrc.d],
+The main folder you'll want to take a look at is [./zshrc.d](https://github.com/eduardomoroni/dotfiles/tree/master/.zshrc.d),
 which sets up a few configuration that'll be different on your particular machine.
 
 ## topical
