@@ -10,10 +10,12 @@ success () {
 
 install () {
   info "Installing $1"
-  sh -c $1
+  sh $1
   success "$1 installed"
 }
 
-find . -name install.sh | while read installer ; do install "${installer}" ; done | true
+find . -name install.sh | while read installer ; do install "${installer}" ; done
 
 success "All topics were installed successfully"
+success "If you see and error message after this line, Chill out"
+success "All went well."

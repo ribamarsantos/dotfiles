@@ -8,7 +8,7 @@ info () {
   printf "\r  [ \033[00;34m..\033[0m ] $1\n"
 }
 
-info "› sudo softwareupdate -i -a"
+info "Updating App Store"
 
-# sudo softwareupdate -i -a
-# sudo sh ./macos/set-defaults.sh
+sudo softwareupdate -i -a
+sudo sh ./macos/set-defaults.sh
