@@ -1,16 +1,21 @@
-# holman does dotfiles
+# eduardomoroni dotFiles
 
-Your dotfiles are how you personalize your system. These are mine.
+## install
 
-I was a little tired of having long alias files and everything strewn about
-(which is extremely common on other dotfiles projects, too). That led to this
-project being much more topic-centric. I realized I could split a lot of things
-up into the main areas I used (Ruby, git, system libraries, and so on), so I
-structured the project accordingly.
+Run this:
 
-If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read my post on the
-subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
+```sh
+git clone https://github.com/eduardomoroni/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./install
+```
+
+First of all, this will run [dotbot](https://github.com/anishathalye/dotbot) based on [this configuration](https://github.com/eduardomoroni/dotfiles/blob/master/install.conf.yaml). This will symlink the appropriate files in `.dotfiles` to your home directory. Everything is configured and tweaked within `~/.dotfiles`.
+
+Customizations can be done by following (zsh-quickstart-kit customizations)[https://github.com/unixorn/zsh-quickstart-kit#customizations] or following (components customization)[https://github.com/eduardomoroni/dotFiles#components]
+
+The main folder you'll want to take a look at is (./zshrc.d/)[https://github.com/eduardomoroni/dotfiles/tree/master/.zshrc.d],
+which sets up a few configuration that'll be different on your particular machine.
 
 ## topical
 
@@ -39,28 +44,8 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
 
-## install
-
-Run this:
-
-```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-script/bootstrap
-```
-
-This will symlink the appropriate files in `.dotfiles` to your home directory.
-Everything is configured and tweaked within `~/.dotfiles`.
-
-The main file you'll want to change right off the bat is `zsh/zshrc.symlink`,
-which sets up a few paths that'll be different on your particular machine.
-
-`dot` is a simple script that installs some dependencies, sets sane macOS
-defaults, and so on. Tweak this script, and occasionally run `dot` from
-time to time to keep your environment fresh and up-to-date. You can find
-this script in `bin/`.
-
-## thanks
+## Thank you guys!
 
 I forked [Zach Holman](https://github.com/holman)' excellent
-[dotfiles](https://github.com/holman/dotfiles) then mixed-up with [zsh-quickstart-kit](https://github.com/unixorn/zsh-quickstart-kit) and [dotbot](https://github.com/anishathalye/dotbot).  Inspired from [Ryan Bates'](http://github.com/ryanb) [original project.](http://github.com/ryanb/dotfiles)
+[dotfiles](https://github.com/holman/dotfiles) then mixed-up with [zsh-quickstart-kit](https://github.com/unixorn/zsh-quickstart-kit) and [dotbot](https://github.com/anishathalye/dotbot).  
+Inspired from [Ryan Bates'](http://github.com/ryanb) [original project.](http://github.com/ryanb/dotfiles)

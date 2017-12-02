@@ -23,6 +23,11 @@
   - sh ./homebrew/install.sh
   - brew bundle
   -
+    command: sh ./script/bootstrap
+    stdin: true
+    stdout: true
+    description: Bootstrap topical components https://github.com/eduardomoroni/dotFiles#components
+  -
     command: sh ./script/install-zsh-quickstart-kit
     stdin: true
     stdout: true

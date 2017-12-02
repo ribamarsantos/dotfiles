@@ -19,7 +19,8 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
 else 
-  echo "  Homebrew already installed."
+  echo "  Homebrew already installed. Upgrading it"
+  brew update
 fi
 
 exit 0

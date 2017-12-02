@@ -1,3 +1,5 @@
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias git-delete-local-merged="git branch -d `git branch --merged | grep -v '^*' | grep -v 'master' | tr -d '\n'`"
+alias git-undo="git reset --soft HEAD^"
