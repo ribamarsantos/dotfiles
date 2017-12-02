@@ -4,14 +4,13 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+# append ~/bin to PATH, ~/bin is a symlink to ~./dotfiles/bin
+export PATH=~/bin:$PATH
 # This should've been installed at /z following topics approach
 if command -v brew >/dev/null 2>&1; then
 	# Load rupa's z if installed
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
-# sup yarn
-# https://yarnpkg.com
-
 if (( $+commands[yarn] ))
 then
   export PATH="$PATH:`yarn global bin`"

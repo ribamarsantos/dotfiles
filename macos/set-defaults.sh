@@ -7,31 +7,14 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
-
-DEFAULT_HOME_PATH="$HOME/Downloads/"
-
-echo "Setting MAC OSX defaults"
-
-user () {
-  printf "\r  [ \033[0;33m??\033[0m ] $1\n"
-}
-
-suggest_default_home () {
-  printf "\t    $1\n"  
-}
-
 info () {
   printf "\r  [ \033[00;34m..\033[0m ] $1\n"
 }
 
-user " - Where do you want to save yours screenshoots? (e.g /Users/emoroni/Downloads/)"
-suggest_default_home "Press Enter to use $DEFAULT_HOME_PATH"
-read -e HOME_PATH
+DEFAULT_HOME_PATH="$HOME/Downloads/"
 
-if [[ -z "$HOME_PATH" ]]
-then
-  HOME_PATH="$DEFAULT_HOME_PATH"
-fi
+info "Setting MAC OSX defaults"
+info "Yours screencaptures will be safed on $DEFAULT_HOME_PATH"
 
 # Always open everything in Finder's list view. This is important.
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
@@ -60,7 +43,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 defaults write com.apple.dock autohide -bool true
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "/Users/emoroni/Downloads"
+defaults write com.apple.screencapture location -string "$DEFAULT_HOME_PATH"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"

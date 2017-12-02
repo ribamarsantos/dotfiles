@@ -1,7 +1,11 @@
 PATH_FILE=".zshrc.d/000-paths"
 
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
 update_path () {
-  echo "Updating $1 paths"
+  info "Updating $1 paths"
   cat $1 >> $PATH_FILE
 }
 

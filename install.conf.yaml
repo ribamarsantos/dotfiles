@@ -25,6 +25,10 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   -
+    command: ./script/path-update
+    stdout: true
+    description: Update $PATH based on topics path.zsh
+  -
     command: sh ./homebrew/install.sh
     stdout: true
     description: Install homebrew
