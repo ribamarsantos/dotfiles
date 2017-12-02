@@ -3,6 +3,3 @@ export PROJECTS=~/projects
 
 # set default EDITOR to VS Code
 export EDITOR='code'
-
-# append ~/bin to PATH, ~/bin is a symlink to ~./dotfiles/bin
-export PATH=~/bin:$PATH

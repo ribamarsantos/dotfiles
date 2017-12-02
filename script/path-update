@@ -1,0 +1,9 @@
+PATH_FILE=".zshrc.d/000-paths"
+
+update_path () {
+  echo "Updating $1 paths"
+  cat $1 >> $PATH_FILE
+}
+
+rm -f $PATH_FILE
+find . -name path.zsh | while read path ; do update_path "$path" ; done
