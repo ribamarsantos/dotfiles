@@ -2,6 +2,8 @@
 #
 # Run all dotfiles installers.
 # Script to install https://github.com/unixorn/zsh-quickstart-kit/blob/master/Readme.md
+# Running ~/.dotFiles/install will create a symlink from ~/.dotFiles/zgen and ~/.dotFiles/zsh-quickstart-kit
+# to your home directory, this script will create a symlink from ~/zsh-quickstart-kit/zsh to ~/zsh
 
 set -e
 set -o pipefail
@@ -45,24 +47,18 @@ read_home_path () {
 install_zsh_quickstart () {
   read_home_path
 
-  info "Copying ~/.dotFiles/zsh-quickstart-kit to $HOME_PATH"
-  cp -R zsh-quickstart-kit "$HOME_PATH"
-
-  info "Copying ~/.dotFiles/zsh-quickstart-kit to $HOME_PATH"
-  cp -R zgen "$HOME_PATH"
-
-  info "Configuring zsh by symlinking the .zshrc, .zsh_aliases and .zsh-completions from this repo into $HOME_PATH"
   cd "$HOME_PATH"/zsh-quickstart-kit
-  rm -rf "$HOME_PATH"/zsh
-  rm -f "$HOME_PATH"/.zshrc "$HOME_PATH"/.zsh_aliases "$HOME_PATH"/.zsh-completions "$HOME_PATH"/.zgen-setup
   stow --target="$HOME_PATH" zsh
 }
 
 if install_zsh_quickstart;
 then
-  success 'install zsh-quickstart-kit'
+  success "install zsh-quickstart-kit"
+  success "you still have to switch your shell to zsh"
+  success "feel free to instal ./fonts and user it on iTerm2"
 else
-  fail 'install zsh-quickstart-kit'
-  info "If something has failed, please install zsh-quickstart-kit manualy"
+  fail "install zsh-quickstart-kit"
+  info "Please take a look at above logs, probably you encountered some conflict during"
+  info "Symlinking procress, if so please remove conflicting files and run againg."
   info "refer to: https://github.com/unixorn/zsh-quickstart-kit/blob/master/Readme.md"
 fi

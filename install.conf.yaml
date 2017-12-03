@@ -21,6 +21,18 @@
         path: bin/
         relink: true
         create: true
+    ~/zgen: 
+        path: zgen/
+        relink: true
+        create: true
+    ~/zsh-quickstart-kit: 
+        path: zsh-quickstart-kit/
+        relink: true
+        create: true
+    ~/zsh: 
+        path: zsh-quickstart-kit/zsh/
+        relink: true
+        create: true
 
 - shell:
   -
