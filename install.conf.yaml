@@ -23,7 +23,10 @@
         create: true
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: sh ./script/update-git-submodules
+    stdout: true
+    description: Installing git submodules
   -
     command: sh ./script/path-update
     stdout: true
