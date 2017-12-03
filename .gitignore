@@ -1,2 +1,2 @@
 git/gitconfig.local.symlink
-./zshrc.d/000-paths
+./zshrc.d/000-zsh

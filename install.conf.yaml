@@ -44,9 +44,9 @@
     stdout: true
     description: Installing git submodules
   -
-    command: sh ./script/path-update
+    command: sh ./script/update-zsh-topics
     stdout: true
-    description: Update $PATH based on topics path.zsh
+    description: Grabs topics *.zsh and loads to environment
   -
     command: sh ./homebrew/install.sh
     stdout: true

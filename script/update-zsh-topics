@@ -1,0 +1,35 @@
+# This script grabs from all topics files ending with .zsh
+# copy all its content to .zshrc.d/000-zsh which is loaded into your environment
+
+# THIS SHOULD'VE 3 differents scripts
+# First loads PATHs
+# then loads .zsh
+# last on would be completion.zsh
+
+PATH_FILE=".zshrc.d/000-zsh"
+
+set -e
+
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+update_path () {
+  if [ "$1" == "./zgen/zgen.zsh" ]
+  then
+    success "Ignoring zgen.zsh"
+    return 0
+  fi
+
+  info "Appending $1 to $PATH_FILE"
+  cat $1 >> $PATH_FILE
+  success "$PATH_FILE updated by $1"
+}
+
+rm -f $PATH_FILE
+find . -name *.zsh | while read path ; do update_path "$path" ; done
+
