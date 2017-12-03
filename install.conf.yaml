@@ -21,8 +21,8 @@
         path: .zgen-local-plugins
         relink: true
         create: true
-    ~/bin:
-        path: bin/
+    ~/.bin:
+        path: .bin/
         relink: true
         create: true
     ~/zgen: 
