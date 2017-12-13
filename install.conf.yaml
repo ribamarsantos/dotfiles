@@ -65,7 +65,7 @@
     stdout: true
     description: Bootstrap topical components 
   -
-    command: sh ./script/install-topic-components
+    command: sh ./script/update-zsh-topics
     stdin: true
     stdout: true
     description: Find the all install.sh and run them iteratively
