@@ -13,4 +13,5 @@ info 'Setting up React Native Android environment'
 
 brew install node
 brew install watchman
+brew cask install android-studio
 npm install -g react-native-cli

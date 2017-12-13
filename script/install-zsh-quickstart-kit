@@ -48,6 +48,7 @@ install_zsh_quickstart () {
   read_home_path
 
   cd "$HOME_PATH"/zsh-quickstart-kit
+  brew install stow
   stow --target="$HOME_PATH" zsh
 }
 

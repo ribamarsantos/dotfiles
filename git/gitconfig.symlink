@@ -35,3 +35,6 @@
 	autosetupmerge = always
 [pull]
 	default = current
+[user]
+	email = eduardomoroni@gmail.com
+	name = Eduardo Moroni

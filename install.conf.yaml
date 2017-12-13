@@ -41,15 +41,18 @@
 - shell:
   -
     command: sh ./script/update-git-submodules
+    stdin: true
     stdout: true
     description: Installing git submodules
   -
     command: sh ./script/update-zsh-topics
     stdout: true
+    stdin: true
     description: Grabs topics *.zsh and loads to environment
   -
     command: sh ./homebrew/install.sh
     stdout: true
+    stdin: true
     description: Install homebrew
   -
     command: sh ./script/install-zsh-quickstart-kit
