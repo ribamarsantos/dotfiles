@@ -55,11 +55,6 @@
     stdin: true
     description: Install homebrew
   -
-    command: sh ./script/install-zsh-quickstart-kit
-    stdin: true
-    stdout: true
-    description: Install zsh-quickstart-kit
-  -
     command: sh ./script/bootstrap
     stdin: true
     stdout: true
