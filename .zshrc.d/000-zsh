@@ -26,35 +26,6 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-alias sc='script/console'
-alias sg='script/generate'
-alias sd='script/destroy'
-# Stolen from
-#   https://github.com/sstephenson/rbenv/blob/master/completions/rbenv.zsh
-
-if [[ ! -o interactive ]]; then
-    return
-fi
-
-compctl -K _rbenv rbenv
-
-_rbenv() {
-  local word words completions
-  read -cA words
-  word="${words[2]}"
-
-  if [ "${#words}" -eq 2 ]; then
-    completions="$(rbenv commands)"
-  else
-    completions="$(rbenv completions "${word}")"
-  fi
-
-  reply=("${(ps:\n:)completions}")
-}# init according to man page
-if (( $+commands[rbenv] ))
-then
-  eval "$(rbenv init -)"
-fi
 if (( $+commands[yarn] ))
 then
   export PATH="$PATH:`yarn global bin`"

@@ -56,7 +56,7 @@ if install_zsh_quickstart;
 then
   success "install zsh-quickstart-kit"
   success "you still have to switch your shell to zsh"
-  success "feel free to instal ./fonts and user it on iTerm2"
+  success "feel free to instal ./fonts and use it on iTerm2"
 else
   fail "install zsh-quickstart-kit"
   info "Please take a look at above logs, probably you encountered some conflict during"
