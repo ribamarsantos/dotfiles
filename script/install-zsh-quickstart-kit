@@ -47,6 +47,7 @@ read_home_path () {
 install_zsh_quickstart () {
   read_home_path
 
+  git clone git@github.com:unixorn/zsh-quickstart-kit.git ~/zsh-quickstart-kit
   cd "$HOME_PATH"/zsh-quickstart-kit
   brew install stow
   stow --target="$HOME_PATH" zsh
