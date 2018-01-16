@@ -1,5 +1,6 @@
 # append ~/.bin to PATH, ~/.bin is a symlink to ~./dotfiles/.bin
 export PATH=~/.bin:$PATH
+PATH="$HOME/.fastlane/bin:$PATH"
 alias git-delete-local-merged="git branch -d `git branch --merged | grep -v '^*' | grep -v 'master' | tr -d '\n'`"
 alias git-undo="git reset --soft HEAD^"
 alias gca='git commit -a'
