@@ -10,9 +10,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-"Plugin 'Shougo/deoplete.nvim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'altercation/vim-colors-solarized'
+"Plugin 'Shougo/deoplete.nvim'
 "Plugin 'ternjs/tern_for_vim'
 "Plugin 'wesQ3/vim-windowswap'
 "Plugin 'mxw/vim-jsx'
@@ -22,11 +22,13 @@ call vundle#end()
 
 filetype plugin indent on
 syntax enable
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+
+"if has('gui_running')
+"    set background=light
+"else
+"    set background=dark
+"endif
+
 colorscheme solarized
 
 let NERDTreeShowBookmarks=1

@@ -3,4 +3,4 @@ export PROJECTS=~/projects
 
 # set default EDITOR to VS Code
 export EDITOR='code'
-export REACT_EDITOR='vim'
+export REACT_EDITOR='code'
