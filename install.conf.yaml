@@ -10,7 +10,11 @@
         create: true
         relink: true
     ~/.vimrc:
-        path: vim/.vimrc
+        path: .vim/.vimrc
+        relink: true
+        create: true
+    ~/.vim:
+        path: .vim/
         relink: true
         create: true
     ~/.zshrc.d:

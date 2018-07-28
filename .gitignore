@@ -1,2 +1,4 @@
 git/gitconfig.local.symlink
-zshrc.d/000-zsh
+.zshrc.d/000-zsh
+.DS_STORE
+.vim/bundle/

@@ -9,7 +9,6 @@ DOTBOT_BIN="/bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 git submodule update --init --recursive "${DOTBOT_DIR}"
-git submodule update --init --recursive zsh-quickstart-kit
 git submodule update --init --recursive zgen
 
 cd "${BASEDIR}"

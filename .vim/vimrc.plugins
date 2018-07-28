@@ -1,0 +1,15 @@
+" If you add a new plugin, add their configurations under
+" ~/.vim/config/plugins into a new file, and add it to index.vim file
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'w0rp/ale'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'elzr/vim-json'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'wesQ3/vim-windowswap'
+Plugin 'Valloric/YouCompleteMe'
