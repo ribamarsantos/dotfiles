@@ -8,3 +8,4 @@ source ~/.vim/config/plugins/controlp.vim
 source ~/.vim/config/plugins/vim-javascript.vim
 source ~/.vim/config/plugins/vim-jsx.vim
 source ~/.vim/config/plugins/vim-tmux-navigator.vim
+source ~/.vim/config/plugins/air-line.vim
