@@ -4,6 +4,7 @@ source ~/.vim/config/vundle.vim
 source ~/.vim/config/theme.vim 
 source ~/.vim/config/mappings.vim 
 source ~/.vim/config/plugins/index.vim
+source ~/.vim/config/languages/index.vim
 
 syntax enable
 

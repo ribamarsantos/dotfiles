@@ -1,0 +1,19 @@
+" Read language configuration
+source ~/.vim/config/languages/apiblueprint.vim
+source ~/.vim/config/languages/coffeescript.vim
+source ~/.vim/config/languages/es6.vim
+source ~/.vim/config/languages/gitcommit.vim
+source ~/.vim/config/languages/go.vim
+source ~/.vim/config/languages/html.vim
+source ~/.vim/config/languages/jade.vim
+source ~/.vim/config/languages/javascript.vim
+source ~/.vim/config/languages/json.vim
+source ~/.vim/config/languages/markdown.vim
+source ~/.vim/config/languages/pig.vim
+source ~/.vim/config/languages/python.vim
+source ~/.vim/config/languages/ruby.vim
+source ~/.vim/config/languages/ruby.vim
+source ~/.vim/config/languages/stylesheets.vim
+source ~/.vim/config/languages/thrift.vim
+source ~/.vim/config/languages/typescript.vim
+source ~/.vim/config/languages/xml.vim
