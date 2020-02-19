@@ -1,11 +1,11 @@
-# eduardomoroni dotFiles
+# Hebert Porto dotFiles
 
 ## before installing
 Before you go into an one command install please double-check following items and customize accordingly
-- [.gitconfig](https://github.com/eduardomoroni/dotfiles/blob/master/.gitconfig)
-- [Brewfile](https://github.com/eduardomoroni/dotfiles/blob/master/Brewfile).
-- [.zshrc.d](https://github.com/eduardomoroni/dotfiles/tree/master/.zshrc.d)
-- Topics. You might don't want install `yarn` for instance, then just delete [yarn](https://github.com/eduardomoroni/dotfiles/tree/master/yarn) folder, you might want to add new topics, refer to [holman/dotfiles](https://github.com/holman/dotfiles)
+- [.gitconfig](https://github.com/hebertporto/dotfiles/blob/master/.gitconfig)
+- [Brewfile](https://github.com/hebertporto/dotfiles/blob/master/Brewfile).
+- [.zshrc.d](https://github.com/hebertporto/dotfiles/tree/master/.zshrc.d)
+- Topics. You might don't want install `yarn` for instance, then just delete [yarn](https://github.com/hebertporto/dotfiles/tree/master/yarn) folder, you might want to add new topics, refer to [holman/dotfiles](https://github.com/holman/dotfiles)
 
 NOTE: DO NOT delete this folders: `dotbot`, `zsh-quickstart-kit`, `zgen`, `script`, `functions`, `.zshrc.d`. They are important for the proccess of installing dotFiles.
 
@@ -14,16 +14,16 @@ NOTE: DO NOT delete this folders: `dotbot`, `zsh-quickstart-kit`, `zgen`, `scrip
 Run this:
 
 ```sh
-git clone https://github.com/eduardomoroni/dotfiles.git ~/.dotfiles
+git clone https://github.com/hebertporto/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install
 ```
 
-First of all, this will run [dotbot](https://github.com/anishathalye/dotbot) based on [this configuration](https://github.com/eduardomoroni/dotfiles/blob/master/install.conf.yaml). This will symlink the appropriate files in `.dotfiles` to your home directory. Everything is configured and tweaked within `~/.dotfiles`.
+First of all, this will run [dotbot](https://github.com/anishathalye/dotbot) based on [this configuration](https://github.com/hebertporto/dotfiles/blob/master/install.conf.yaml). This will symlink the appropriate files in `.dotfiles` to your home directory. Everything is configured and tweaked within `~/.dotfiles`.
 
-Customizations can be done by following [zsh-quickstart-kit customizations](https://github.com/unixorn/zsh-quickstart-kit#customizations) or following [components customization](https://github.com/eduardomoroni/dotFiles#components)
+Customizations can be done by following [zsh-quickstart-kit customizations](https://github.com/unixorn/zsh-quickstart-kit#customizations) or following [components customization](https://github.com/hebertporto/dotFiles#components)
 
-The main folder you'll want to take a look at is [./zshrc.d](https://github.com/eduardomoroni/dotfiles/tree/master/.zshrc.d),
+The main folder you'll want to take a look at is [./zshrc.d](https://github.com/hebertporto/dotfiles/tree/master/.zshrc.d),
 which sets up a few configuration that'll be different on your particular machine.
 
 ## topical
@@ -49,5 +49,5 @@ There's a few special files in the hierarchy.
 ## Thank you guys!
 
 I forked [Zach Holman](https://github.com/holman)' excellent
-[dotfiles](https://github.com/holman/dotfiles) then mixed-up with [zsh-quickstart-kit](https://github.com/unixorn/zsh-quickstart-kit) and [dotbot](https://github.com/anishathalye/dotbot).  
+[dotfiles](https://github.com/holman/dotfiles) then mixed-up with [zsh-quickstart-kit](https://github.com/unixorn/zsh-quickstart-kit) and [dotbot](https://github.com/anishathalye/dotbot).
 Inspired from [Ryan Bates'](http://github.com/ryanb) [original project.](http://github.com/ryanb/dotfiles)
