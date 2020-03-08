@@ -13,5 +13,6 @@ info 'Setting up React Native Android environment'
 
 brew install node
 brew install watchman
+gem install cocoapods
 brew cask install android-studio
 
