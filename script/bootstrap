@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # bootstrap installs things.
-# https://github.com/hebertporto/dotFiles#components
+# https://github.com/ribamarsantos/dotFiles#components
 
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)

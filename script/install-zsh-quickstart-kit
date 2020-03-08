@@ -34,7 +34,7 @@ info () {
 }
 
 read_home_path () {
-  user " - What is the path for your home folder? (e.g /Users/emoroni)"
+  user " - What is the path for your home folder? (e.g /Users/ribamarsantos)"
   suggest_default_home "Press Enter to use $DEFAULT_HOME_PATH"
   read -e HOME_PATH
 

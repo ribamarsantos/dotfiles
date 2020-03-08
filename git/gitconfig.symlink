@@ -42,8 +42,8 @@
 [pull]
 	default = current
 [user]
-	name = Hebert Porto
-	email = hebert.porto@skipthedishes.ca
+	name = Ribamar Santos
+	email = ribamaar@gmail.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
